@@ -195,7 +195,7 @@ header {
     align-items: center;
     flex-direction: row;
     gap: 10px;
-    pointer-events: none;
+    /* pointer-events: none; */
     display: block;
 }
 
@@ -241,10 +241,45 @@ header {
 }
 
 .carrossel_modeulos_rapidos:hover {
-    cursor: grab; /* Muda o cursor para "mãozinha" ao passar o mouse sobre o carrossel */
+    cursor: grab;
 }
 
 .carrossel_modeulos_rapidos:active {
-    cursor: grabbing; /* Muda o cursor enquanto arrasta o carrossel */
+    cursor: grabbing;
 }
 
+/* ______________________________________________ */
+
+/* GUIA CURSOS */
+
+/* Estilos para o carrossel de cursos */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.carousel-item a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.carousel-item:hover {
+    cursor: pointer;
+}

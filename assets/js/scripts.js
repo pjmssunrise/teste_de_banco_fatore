@@ -1,6 +1,5 @@
-// função da função do botão de navegação
+// função do botão de navegação
 
-// scripts.js
 document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
@@ -9,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.classList.toggle('active');
     });
 
-    // Fechar o menu quando clicar fora dele
     document.addEventListener('click', function(event) {
         if (!navToggle.contains(event.target) && !navLinks.contains(event.target)) {
             navLinks.classList.remove('active');
@@ -18,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// ____________________________________
+// carrossel ____________________________________
 
     const carrossel = document.querySelector('.carrossel_modeulos_rapidos');
     let isDown = false;
@@ -46,6 +44,10 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!isDown) return;
         e.preventDefault();
         const x = e.pageX - carrossel.offsetLeft;
-        const walk = (x - startX) * 3; // Ajuste a sensibilidade do movimento aqui
+        const walk = (x - startX) * 1;
         carrossel.scrollLeft = scrollLeft - walk;
     });
+
+
+// __________________________________________
+
