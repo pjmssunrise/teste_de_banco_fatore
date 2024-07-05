@@ -1,3 +1,84 @@
-.bottom-nav-link.active {
-    border-top: 3px solid #ff6200;
+/* GUIA CURSOS */
+
+/* Estilos para o carrossel de cursos */
+.carousel {
+    /* display: flex; */
+    /* overflow-x: auto; */
+    /* scrollbar-width: none; */
+    /* -ms-overflow-style: none; */
+    /* white-space: nowrap; */
+    display: flex;
+    padding: 10px 0;
+}
+
+/* .carousel::-webkit-scrollbar {
+    display: none;
+} */
+
+.carousel-item {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.carousel-item a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.carousel-item:hover {
+    cursor: pointer;
+}
+
+
+/* Cursos */
+#cursos-section {
+    margin: 20px;
+    margin-bottom: 50%;
+}
+
+.curso {
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 10px;
+    position: relative; /* Adicionado para garantir que o posicionamento absoluto funcione corretamente */
+}
+
+.curso img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.disponibilidade {
+    position: absolute;
+    top: 5%;
+    background-color: white;
+    padding: 10px;
+    padding-right: 20px;
+    border-radius: 0px 50px 50px 0;
+    z-index: 1;
+}
+
+#curso_disponivel {
+    background-color: rgb(100, 0, 167);
+    color: white;
+}
+
+#curso_indisponivel {
+    background-color: rgb(255, 37, 37);
+    color: white;
+}
+
+.informacoes_curso {
+    margin: 10px;
+    padding-bottom: 15px;
+}
+
+
+section a {
+    text-decoration: none;
+    color: #000;
 }

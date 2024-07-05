@@ -12,17 +12,34 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
+    /* justify-content: space-between; */
+    /* padding: 10px 20px; */
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    position: relative;
+    /* position: relative; */
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px; */
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header img {
+    padding: 10px;
 }
 
 .logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    padding: -100px;
 }
 
 .logo img {
@@ -31,6 +48,7 @@ header {
 
 .usuario_img {
     height: 40px;
+    /* padding: -100px; */
 }
 
 /* Botão de navegação */
@@ -106,6 +124,7 @@ header {
     display: flex;
     justify-content: space-around;
     background-color: rgb(255, 255, 255);
+    z-index: 1000;
     /* border-top: 2px solid #444; */
 }
 
@@ -134,152 +153,9 @@ header {
 
 /* conteúdo ___________________________ */
 
-
-
-/* módulos rápidos */
-
-.modulos_rapidos {
-    background-color: rgb(255, 255, 255);
+.conteudo {
+    width: 90%;
+    background-color: #797979;
     margin: 20px;
-    border-radius: 10px;
-    padding: 2%;
-}
-
-.modulos_rapidos a {
-    text-decoration: none;
-    color: rgb(86, 0, 215);
-}
-
-.modulos_rapidos_superior {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.carrossel_modeulos_rapidos {
-    display: flex;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    white-space: nowrap;
-    padding: 10px 0;
-    user-select: none;
-    -webkit-user-select: none;
-    -webkit-user-drag: none;
-    touch-action: pan-y;
-}
-
-.carrossel_modeulos_rapidos::-webkit-scrollbar {
-    display: none;
-}
-
-.carrossel_modeulos_rapidos_item {
-    flex: 0 0 auto;
-    margin-right: 10px;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    user-select: none;
-    -webkit-user-select: none;
-    -webkit-user-drag: none;
-    touch-action: pan-y;
-}
-
-.carrossel_modeulos_rapidos_item a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
-    /* pointer-events: none; */
-    display: block;
-}
-
-.modulos_rapidos {
-    background-color: rgb(255, 255, 255);
-    margin: 20px;
-    border-radius: 10px;
-    padding: 2%;
-    overflow: hidden;
-}
-
-.carrossel_modeulos_rapidos {
-    display: flex;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    white-space: nowrap;
-    padding: 10px 0;
-    transition: transform 1s ease-in; 
-}
-
-.carrossel_modeulos_rapidos::-webkit-scrollbar {
-    display: none;
-}
-
-.carrossel_modeulos_rapidos_item {
-    flex: 0 0 auto;
-    margin-right: 10px;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-}
-
-.carrossel_modeulos_rapidos_item a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.carrossel_modeulos_rapidos:hover {
-    cursor: grab;
-}
-
-.carrossel_modeulos_rapidos:active {
-    cursor: grabbing;
-}
-
-/* ______________________________________________ */
-
-/* GUIA CURSOS */
-
-/* Estilos para o carrossel de cursos */
-.carousel {
-    display: flex;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    white-space: nowrap;
-    padding: 10px 0;
-}
-
-.carousel::-webkit-scrollbar {
-    display: none;
-}
-
-.carousel-item {
-    flex: 0 0 auto;
-    margin-right: 10px;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-}
-
-.carousel-item a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-
-.carousel-item:hover {
-    cursor: pointer;
+    margin-top: 25%;
 }
