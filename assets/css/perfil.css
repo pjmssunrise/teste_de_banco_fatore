@@ -1,0 +1,74 @@
+body {
+    background-color: white;
+}
+
+.minha-conta {
+    margin: 10%;
+    margin-top: 25%;
+    font-size: 70%;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.configuracoes_perfil {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.gerenciar-cursos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    margin: 20px auto;
+    margin-left: 15%;
+}
+
+.gerenciar-cursos a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gerenciar-cursos-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.gerenciar-cursos-item img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Estilos para a barra de navegação inferior */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 100;
+    border-top: 1px solid #ccc;
+}
+
+.bottom-nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.8rem;
+}
+
+.bottom-nav-link.active {
+    color: #007bff; /* Cor ativa para o link ativo */
+}

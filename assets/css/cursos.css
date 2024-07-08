@@ -1,19 +1,18 @@
-/* GUIA CURSOS */
-
 /* Estilos para o carrossel de cursos */
 .carousel {
-    /* display: flex; */
-    /* overflow-x: auto; */
-    /* scrollbar-width: none; */
-    /* -ms-overflow-style: none; */
-    /* white-space: nowrap; */
     display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;  /* Para esconder a barra de rolagem no Firefox */
+    -ms-overflow-style: none;  /* Para esconder a barra de rolagem no IE e Edge */
+    white-space: nowrap;  /* Para evitar que os itens quebrem linha */
     padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-/* .carousel::-webkit-scrollbar {
-    display: none;
-} */
+.carousel::-webkit-scrollbar {
+    display: none;  /* Para esconder a barra de rolagem no Chrome, Safari e Opera */
+}
 
 .carousel-item {
     flex: 0 0 auto;
@@ -21,6 +20,7 @@
     padding: 10px;
     background-color: #f0f0f0;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .carousel-item a {
@@ -32,7 +32,6 @@
 .carousel-item:hover {
     cursor: pointer;
 }
-
 
 /* Cursos */
 #cursos-section {
@@ -76,7 +75,6 @@
     margin: 10px;
     padding-bottom: 15px;
 }
-
 
 section a {
     text-decoration: none;
